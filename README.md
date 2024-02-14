@@ -1,43 +1,43 @@
-# Aggiornamento Automatico del README di GitHub
+# GitHub README Auto-Update Script
 
-Questo script Google Apps Script aggiorna automaticamente il file `README.md` di un repository GitHub specificato con gli eventi del giorno corrente dal tuo calendario Google.
+This Google Apps Script automatically updates the `README.md` file of a specified GitHub repository with the current day's events from your Google Calendar.
 
-## Funzionalità
+## Features
 
-- Estrazione degli eventi giornalieri dal tuo Google Calendar.
-- Formattazione del contenuto del README con gli eventi del giorno.
-- Aggiornamento del file `README.md` nel repository GitHub specificato.
+- Retrieves daily events from your Google Calendar.
+- Formats the README content with the day's events.
+- Updates the `README.md` file in the specified GitHub repository.
 
-## Sicurezza
+## Security
 
-- Le credenziali e gli ID sensibili sono memorizzati in modo sicuro utilizzando le variabili d'ambiente di Google Apps Script.
-- Sanificazione delle stringhe per prevenire iniezioni indesiderate nel file `README.md`.
+- Sensitive credentials and IDs are securely stored using Google Apps Script's environment variables.
+- String sanitization to prevent unwanted injections into the `README.md` file.
 
-## Configurazione
+## Configuration
 
-### Impostazioni dello Script
+### Script Settings
 
-Per utilizzare questo script, devi configurare alcune proprietà dello script con i tuoi dati specifici:
+To use this script, you need to configure some script properties with your specific details:
 
-1. `CALENDAR_ID`: L'ID del tuo Google Calendar da cui estrarre gli eventi.
-2. `GITHUB_TOKEN`: Il token di accesso personale di GitHub con le autorizzazioni necessarie per modificare il repository.
-3. `GITHUB_USERNAME`: Il tuo nome utente GitHub.
-4. `GITHUB_REPO_NAME`: Il nome del repository GitHub in cui desideri aggiornare il `README.md`.
+1. `CALENDAR_ID`: The ID of your Google Calendar from which to extract events.
+2. `GITHUB_TOKEN`: Your GitHub personal access token with the necessary permissions to edit the repository.
+3. `GITHUB_USERNAME`: Your GitHub username.
+4. `GITHUB_REPO_NAME`: The name of the GitHub repository where you wish to update the `README.md`.
 
-Queste proprietà possono essere impostate tramite la sezione "Proprietà del progetto" > "Proprietà dello script" nell'editor di Google Apps Script.
+These properties can be set via the "Project Properties" > "Script Properties" section in the Google Apps Script editor.
 
-### Autorizzazioni
+### Permissions
 
-Al primo utilizzo, lo script richiederà l'autorizzazione per accedere ai servizi di Google Calendar e Google Drive. Assicurati di concedere le autorizzazioni necessarie per il corretto funzionamento dello script.
+Upon first use, the script will request permission to access Google Calendar and Google Drive services. Make sure to grant the necessary permissions for the script to function properly.
 
-## Uso
+## Usage
 
-Una volta configurato, lo script può essere eseguito manualmente dall'editor di Google Apps Script o può essere impostato per essere eseguito automaticamente a intervalli regolari utilizzando i trigger di Google Apps Script.
+Once configured, the script can be run manually from the Google Apps Script editor or set to run automatically at regular intervals using Google Apps Script triggers.
 
-## Contribuire
+## Contributing
 
-Sei libero di forkare, modificare e contribuire a migliorare questo script. Assicurati di seguire le best practice per la sicurezza e la gestione delle credenziali.
+Feel free to fork, modify, and contribute to improve this script. Ensure you follow best practices for security and credentials management.
 
-## Licenza
+## License
 
-Questo script è distribuito sotto la licenza [MIT](https://opensource.org/licenses/MIT). Per ulteriori informazioni, vedere il file `LICENSE`.
+This script is distributed under the [MIT License](https://opensource.org/licenses/MIT). For more information, see the `LICENSE` file.
